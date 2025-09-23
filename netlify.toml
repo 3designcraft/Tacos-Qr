@@ -1,17 +1,20 @@
 [[headers]]
-  for = "/Build/*.data.br"
+  # Apunta al archivo de datos con la nueva extensión
+  for = "/Build/*.data.unityweb"
   [headers.values]
     Content-Encoding = "br"
     Content-Type = "application/octet-stream"
 
 [[headers]]
-  for = "/Build/*.wasm.br"
+  # Apunta al archivo wasm con la nueva extensión
+  for = "/Build/*.wasm.unityweb"
   [headers.values]
     Content-Encoding = "br"
     Content-Type = "application/wasm"
 
 [[headers]]
-  for = "/Build/*.js.br"
+  # Apunta al archivo javascript del framework con la nueva extensión
+  for = "/Build/*.framework.js.unityweb"
   [headers.values]
     Content-Encoding = "br"
     Content-Type = "application/javascript"
